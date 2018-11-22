@@ -15,12 +15,11 @@ class EmailParser
 
   def initialize(emails)
     @emails = emails
-		
-		@@all << self
+		#@@all << self
   end
 
   def self.all
-    @@all
+    @@all << self
   end
 
 #  emails = "john@doe.com, person@somewhere.org"
