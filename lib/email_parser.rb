@@ -26,9 +26,9 @@ class EmailParser
 #  emails = "john@doe.com, person@somewhere.org"
 #  OR emails = "avi@test.com, arel@test.com test@avi.com,
 # removes duplicate emails
-def parse
-	@emails.split(/, | /).uniq
-end
+  def parse
+	   @emails.split(/, | /).uniq
+  end
 
 #class end below
 end
