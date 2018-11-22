@@ -1,6 +1,6 @@
 # class EmailParser accepts string of unformatted emails
 # parse method on the class should separate them into
-# unique email addresses. 
+# unique email addresses.
 # The delimiters to support are commas (',')
 # or whitespace (' ').
 # Output to produce:
@@ -12,7 +12,7 @@
 class EmailParser
   attr_accessor :emails
   @@all = []
-	
+
   def initialize(emails)
     @emails = emails
 		@emails
@@ -24,7 +24,7 @@ class EmailParser
   end
 
 #  emails = "john@doe.com, person@somewhere.org"
-#  OR emails = "avi@test.com, arel@test.com test@avi.com, 
+#  OR emails = "avi@test.com, arel@test.com test@avi.com,
 # removes duplicate emails
 def parse
 	@emails.split(/, | /).uniq
